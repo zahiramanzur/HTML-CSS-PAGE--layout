@@ -1,0 +1,121 @@
+main{
+    padding-top: 2rem;
+}
+
+.packages{
+    width: 80%;
+    border: 3px solid #1679caef;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.packages a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.packages__badge{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.1rem;
+    color: white;
+    background: #f05518ef;
+    padding: 0.5rem;
+    margin: 1.2rem;
+}
+
+.packages__subtitle{
+    color: #FFC300;
+}
+
+.packages__description{
+    border: 1px solid #FFC300;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.packages:hover, 
+.packages:active{
+    box-shadow: 0px 2px 5px 3px #5d5d5f;
+    border-color: #ffa600;
+}
+
+#plus{
+    background: rgba(144, 12, 63, 0.959);
+    border-left: none;
+    margin-top: 1.875rem;   
+}
+
+#plus .packages__title {
+    color: #1679caef;
+    font-size: 1.5rem;
+    text-shadow: -2px -2px 1px #0007, 2px 2px 1px #0007, -2px 2px 1px #0007, 2px -2px 1px #0007;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#free{
+    background: rgba(163, 37, 54, 0.932) ;
+    float: right;
+    border-right: none;
+    text-align: right;
+}
+
+#free .packages__title {
+    color: #1679caef;
+    font-size: 1.5rem;
+    text-shadow: -2px -2px 1px #0007, 2px 2px 1px #0007, -2px 2px 1px #0007, 2px -2px 1px #0007;
+}
+
+#premium{
+    background: rgba(88, 16, 37, 0.959);
+    border-left: none;
+}
+
+#premium .packages__title{
+    font-size: 2rem;
+    text-shadow: -2px -2px 1px #FFC300, 2px 2px 1px #FFC300, -2px 2px 1px #FFC300, 2px -2px 1px #FFC300;
+    color: rgb(45, 33, 110);
+}
+
+#premium .packages__description {
+    background-color: #FFC300;
+}
+
+.background {
+    background: url("plans-background.jpg") center/cover;
+    filter: sepia(60%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+        
+}
+
+@media (min-width: 40rem) {
+    main {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    .package {
+        border-left: 3px solid #1679caef;
+    }
+
+    #free {
+        border-right: 3px solid #1679caef;
+    }
+
+    #free:hover,
+    #free:active {
+        border-right-color: #ffa600;
+    }
+}
