@@ -27,7 +27,7 @@ main {
 
 .signup-form [id*="terms"],
 .signup-form [id*="terms"] + label {
-    display: inline;
+    display: inline-flex;
     width: auto;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
@@ -58,11 +58,33 @@ main {
 }
 
 .signup-form [type="checkbox"] {
-    border: 1px #FFC300 solid;
+    border: 2px #FFC300 solid;
     background-color: rgba(255, 196, 0, 0.418);
     width: 1rem;
     height: 1rem;
-    /* -webkit-appearance: none; */
+    border-radius: 6px;
+    -webkit-appearance: none;
+}
+
+.signup-form input[type="checkbox"]:checked {
+    background: rgba(56, 228, 22, 0.418);
+    border: 2px #31743aef solid;
+}
+
+.signup-form input[type="checkbox"]:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signup-form input[type="checkbox"]:focus {
+    outline: none;
 }
 
 .signup-form #title {
@@ -73,6 +95,15 @@ main {
 .signup-form select:focus {
     outline: none;
     background-color: rgba(255, 196, 0, 0.514);
+}
+
+.signup-form input.invalid,
+.signup-form input[type="checkbox"].invalid,
+.signup-form input:invalid,
+.signup-form input[type="checkbox"]:invalid {
+    border: 2px red solid;
+    background-color: #c55a5a;
+    border-radius: 6px;
 }
 
 
