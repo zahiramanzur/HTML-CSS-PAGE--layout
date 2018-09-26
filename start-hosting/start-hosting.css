@@ -1,0 +1,84 @@
+main {
+    padding-top: 0.5rem;
+}
+
+.signup-title {
+    color: #a31262;
+    text-align: center;
+    margin-bottom: -1rem;
+    font-size: 1.5rem;
+}
+
+.signup-form {
+    padding: 1rem;
+}
+
+.signup-form label {
+    font-size: bold;
+}
+
+.signup-form label, 
+.signup-form input,
+.signup-form select {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.signup-form [id*="terms"],
+.signup-form [id*="terms"] + label {
+    display: inline;
+    width: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.signup-form [type="submit"] {
+    display: block;
+    width: 20%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1.5px #FFC300 solid;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.signup-form input:hover,
+.signup-form select:hover,
+.signup-form input:active,
+.signup-form select:active {
+    border: #f05518ef 1.5px solid;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signup-form [type="checkbox"] {
+    border: 1px #FFC300 solid;
+    background-color: rgba(255, 196, 0, 0.418);
+    width: 1rem;
+    height: 1rem;
+    /* -webkit-appearance: none; */
+}
+
+.signup-form #title {
+    background-color: rgba(255, 196, 0, 0.514);
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+    outline: none;
+    background-color: rgba(255, 196, 0, 0.514);
+}
+
+
+@media(min-width: 40rem){
+    .signup-form {
+        margin: auto;
+        width: 25rem;
+    }
+}
